@@ -1,0 +1,12 @@
+{
+    "maze_name": "umaze",
+    "adapter_select": ["language"],
+    "action_limit": 100,
+    "reward_signal": [1, 0, -0.05],
+    "sub_goal": "None",
+    "describe_mode": "give_position",
+    "maze_width": 81,
+    "maze_height": 51,
+    "maze_complexity": 0.75,
+    "maze_density": 0.75
+}
