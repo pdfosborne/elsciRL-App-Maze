@@ -7,19 +7,19 @@ Code was sourced from [waterhorse1/Natural-langauge-RL](https://github.com/water
 
 ## Configuration
 
-maze_name:
-    - 'umaze'
-    - 'double_t_maze'
-    - 'medium'
-    - 'large'
-    - 'random'
-        - inputs for: size, complexity & density 
+    maze_name:
+        - 'umaze'
+        - 'double_t_maze'
+        - 'medium'
+        - 'large'
+        - 'random'
+            - inputs for: size, complexity & density 
 
-reward_signal e.g. [1,0,-0.05]:
-    - success
-    - timeout
-    - action cost
+    reward_signal e.g. [1,0,-0.05]:
+        - success
+        - timeout
+        - action cost
 
-describe_mode:
-    - give_position
-    - only_walls
+    describe_mode:
+        - give_position
+        - only_walls
