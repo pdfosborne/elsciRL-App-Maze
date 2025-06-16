@@ -120,7 +120,11 @@ class Engine:
             0: (0, -1), # left
             1: (0, 1),  # right
             2: (-1, 0), # down
-            3: (1, 0) # up
+            3: (1, 0), # up
+            4: (-1,-1), # down+left
+            5: (1,-1), # up+left
+            6: (-1,1), # down+right
+            7: (1,1) # up+right
         }
 
         # Initialize state
