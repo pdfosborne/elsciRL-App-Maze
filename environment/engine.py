@@ -117,10 +117,10 @@ class Engine:
 
         # Define actions
         self.actions = {
-            'move left': (0, -1),
-            'move right': (0, 1), 
-            'move up': (-1, 0),
-            'move down': (1, 0)
+            0: (0, -1), # left
+            1: (0, 1),  # right
+            2: (-1, 0), # down
+            3: (1, 0) # up
         }
 
         # Initialize state
