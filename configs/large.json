@@ -2,7 +2,7 @@
     "maze_name": "umaze",
     "adapter_select": ["language"],
     "action_limit": 100,
-    "reward_signal": [1, 0, -0.05],
+    "reward_signal": [1, 0, -0.001],
     "sub_goal": "None",
     "describe_mode": "give_position",
     "maze_width": 81,
