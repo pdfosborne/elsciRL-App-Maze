@@ -216,7 +216,7 @@ class Engine:
         ax.plot(self.goal[1], self.goal[0], 'g*', markersize=15)
         
         # Plot current position
-        ax.plot(state[1], state[0], 'ro', markersize=10)
+        ax.plot(int(state[1]), int(state[0]), 'ro', markersize=10)
         
         plt.grid(True)
         return fig
