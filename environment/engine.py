@@ -208,6 +208,8 @@ class Engine:
     def render(self, state = None):
         if state is None:
             state = self.position
+        else:
+            state = state.split("_")
             
         fig, ax = plt.subplots()
         ax.imshow(self.maze, cmap='binary')
@@ -216,7 +218,7 @@ class Engine:
         ax.plot(self.goal[1], self.goal[0], 'g*', markersize=15)
         
         # Plot current position
-        ax.plot(int(state.split('_')[1]), int(state.split('_')[0]), 'ro', markersize=10)
+        ax.plot(int(state[1]), int(state[0]), 'ro', markersize=10)
         
         plt.grid(True)
         return fig
