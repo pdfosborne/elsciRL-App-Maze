@@ -4,7 +4,7 @@
     "number_training_repeats": 2,
     "number_training_seeds": 1,
     "agent_select": ["Qlearntab"],
-    "test_agent_type":"all", 
+    "test_agent_type":"best", 
     "number_test_episodes": 100,
     "number_test_repeats": 5,
     "agent_parameters": {
