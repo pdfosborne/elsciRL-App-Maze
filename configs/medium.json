@@ -1,5 +1,5 @@
 {
-    "maze_name": "umaze",
+    "maze_name": "medium",
     "adapter_select": ["language"],
     "action_limit": 100,
     "reward_signal": [1, 0, -0.001],
