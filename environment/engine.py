@@ -222,6 +222,8 @@ class Engine:
             state = self.position
         else:
             state = state.split("_")
+        
+        y_plot = (self.maze.size()[0]-1) - int(state[1])
             
         fig, ax = plt.subplots()
         ax.imshow(self.maze, cmap='binary')
@@ -230,7 +232,7 @@ class Engine:
         ax.plot(self.goal[1], self.goal[0], 'g*', markersize=15)
         
         # Plot current position
-        ax.plot(int(state[1]), int(state[0]), 'ro', markersize=10)
+        ax.plot(y_plot, int(state[0]), 'ro', markersize=10)
         
         plt.grid(True)
         return fig
