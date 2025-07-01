@@ -134,6 +134,14 @@ class Engine:
         self.move_history = []
 
     def reset(self, start_obs = None):
+        # Reset position and state
+        start_positions = {
+            'umaze': (3, 1),
+            'double_t_maze': (1, 1),
+            'medium': (1, 1),
+            'large': (1, 1),
+        }
+
         self.num_steps = 0
         self.move_history = []
         
@@ -144,10 +152,14 @@ class Engine:
         if start_obs is not None:
             self.position = start_obs.split("_")
             self.position = [int(i) for i in self.position]
-        else:
+        elif self.maze_name == 'random':
+            # For random maze, start at a random position
             positions = np.argwhere(self.maze == 0).tolist()
             positions.remove(self.goal)
             self.position = random.choice(positions)
+        else:
+            # Fixed start positions for predefined mazes
+            self.position = list(start_positions.get(self.maze_name, self.start_position))
         
         output_position = f"{self.position[0]}_{self.position[1]}"
         return output_position
