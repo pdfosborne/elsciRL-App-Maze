@@ -126,6 +126,8 @@ class Engine:
             6: (-1,1), # down+right
             7: (1,1) # up+right
         }
+        # DQN Compatibility need to specify action space size
+        self.output_size = 8
 
         # Initialize state
         self.position = None
