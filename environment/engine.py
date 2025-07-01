@@ -224,7 +224,7 @@ class Engine:
             state = state.split("_")
                     
         fig, ax = plt.subplots()
-        ax.imshow(np.flipud(self.maze), cmap='binary')
+        ax.imshow(self.maze, cmap='binary')
         
         # Plot goal
         ax.plot(self.goal[1], self.goal[0], 'g*', markersize=15)
