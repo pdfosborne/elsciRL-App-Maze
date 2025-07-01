@@ -223,7 +223,7 @@ class Engine:
         else:
             state = state.split("_")
         
-        y_plot = (self.maze.size()[0]-1) - int(state[1])
+        y_plot = (np.shape(self.maze)[1]-1) - int(state[1])
             
         fig, ax = plt.subplots()
         ax.imshow(self.maze, cmap='binary')
