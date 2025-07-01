@@ -7,7 +7,7 @@ class Adapter:
         # Initialize language encoder
         self.LLM_adapter = OllamaAdapter(
             model_name=setup_info.get('model_name', 'llama3.2'),
-            base_prompt=setup_info.get('system_prompt', 'You are navigating a maze with x,y positions and proximity to the walls.'),
+            base_prompt=setup_info.get('system_prompt', 'You are navigating a maze with [y,x] positions and proximity to the walls.'),
             context_length=2000,
             action_history_length=setup_info.get('action_history_length', 5),
             encoder=setup_info.get('encoder', 'MiniLM_L6v2')
